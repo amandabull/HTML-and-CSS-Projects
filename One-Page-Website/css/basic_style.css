@@ -13,7 +13,7 @@ h1 {
     height: 450px;
     background-color: #faebd7;
     border: 2px solid black;
-    border-radius: 54;
+    border-radius: 5%;
 }
 /* ------------------------------------------
 SELECT ALL SQUARES IN THE ARRAY
@@ -34,5 +34,28 @@ SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 --------------------------------------------*/
 .squares:nth-child(-n+4) p{
     font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size:
+    font-size:1.5cm;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/*-------------------------------------------
+INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
+--------------------------------------------*/
+.squares:nth-child(1) {
+    background: #4240ff;
+}
+
+.squares:nth-child(2) {
+    background: #ab3fdd;
+}
+
+.squares:nth-child(3) {
+    background: #ae163e;
+}
+
+.squares:nth-child(4) {
+    background: #00b200;
 }
