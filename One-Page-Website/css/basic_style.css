@@ -35,7 +35,7 @@ SELECT ALL SQUARES IN THE ARRAY
 /*-------------------------------------------
 SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 --------------------------------------------*/
-.squares:nth-child(-n+4) p{
+.container .squares:nth-child(-n+4) p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     font-weight: 900;
@@ -66,7 +66,7 @@ INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
 /*-------------------------------------------
 HOVER EFFECTS
 --------------------------------------------*/
-.squares:nth-child(-n+4) :hover {
+.container .squares:nth-child(-n+4):hover {
     background-image: url("../images/icons/smileyface2.png");
     transform: scale(.5);
     animation-name: race;
