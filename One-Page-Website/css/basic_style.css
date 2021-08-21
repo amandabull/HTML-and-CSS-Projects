@@ -31,10 +31,11 @@ SELECT ALL SQUARES IN THE ARRAY
     cursor: pointer;
     transition: transform .5s ease-in-out;
 }
+
 /*-------------------------------------------
 SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
 --------------------------------------------*/
-.squares:nth-child(-n+4)  p{
+.squares:nth-child(-n+4) p{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     font-weight: 900;
@@ -65,9 +66,15 @@ INDIVIDUALLY SELECT A SQUARE IN THE ARRAY
 /*-------------------------------------------
 HOVER EFFECTS
 --------------------------------------------*/
-.container .squares:nth-child(-n+4):hover {
+.squares:nth-child(-n+4) :hover {
     background-image: url("../images/icons/smileyface2.png");
+    transform: scale(.5);
+    animation-name: race;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(2.5, .2, .3, 2);
 }
+
 .squares:nth-child(1):hover {
     background: #13b4ff;
 }
@@ -82,4 +89,17 @@ HOVER EFFECTS
 
 .squares:nth-child(4):hover {
     background: #77b800;
+}
+
+/*-------------------------------------------
+ANIMATION EFFECTS
+--------------------------------------------*/
+@keyframes race {
+    0%, 100% {
+        transform: translateY(0px);
+        background-image: url("../images/icons/smileyface2.png");
+    }
+    50% {
+        transform: translateY(330px);
+    }
 }
