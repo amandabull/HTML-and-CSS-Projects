@@ -3,18 +3,18 @@
 	<head>
 		<meta charset=utf-8">
 		<title>Pandemic Priorities | One Stop Shop</title>
-		<link rel="stylesheet" href="./css/photo_style.css">
+		<link rel="stylesheet" href="./css/shared.css">
+		<link rel="stylesheet" href="./css/animations.css">
 	</head>
 	<body>
 	
 		<!--NAV-->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>HOME</li></a>
 					<a href="#gallery" id="link"><li>MUST HAVES</li></a>
 					<a href="#contact" id="link"><li>SHOPPING CART</li></a>
-					<a href="video" id="link"><li>PANDEMIC NEWS</li></a>
 				</ul>
 			</div>
 		</div>
@@ -22,20 +22,19 @@
 		
 		<!--HOME-->
 		<div id="home">
-			<div>
-				<div>
-					<span>Pandemic Priorities</span>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Pandemic Priorities</span>
 				</div>
 			</div>
 		</div>
 		<!--END HOME-->
 		
 		<!--GALLERY-MUST HAVES-->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h1>Must Haves</h1>
-				<div>
-				
+				<div class="flex-container">
 					<!--PHOTO-CONTAINER 1-->
 					<div class="photo-container">
 						<div class="photo">
@@ -149,23 +148,23 @@
 	<!--GALLERY-MUST HAVES-->
 	
 	<!--SHOPPING CART-->
-	<section>
-		<div id="contact">
-			<div>
-				<h1>Shopping Cart</h1>
-				<div>
+	<section id="contact">
+		<div class="container">
+			<div class="heading-padding">
+				<h1 class="heading-padding">Shopping Cart</h1>
+				<div class="shopping-cart">
 					<h2><span>Your lockdown comfort and entertainment delivered right to your doorstep. </span>
-						<br />Purchase a pandemic package deal today!
+						<br/>Purchase a pandemic package deal today!
 						</h2>
-						<p>
+						<p class="shopping-cart-text">
 							Please provide us with your basic contact information.
 						</p>
-						<div>
+						<div class="form-shopping-cart">
 							<form action="" method="post">
-								<input class="shopping cart" type="text" value="First Name">
-								<input class="shopping cart" type="text" value="Last Name">
-								<input class="shopping cart" type="text" value="Email Address">
-								<input class="shopping cart" type="text" value="Phone Number">
+								<input class="shopping-cart" type="text" value="" placeholder="First Name">
+								<input class="shopping-cart" type="text" value="" placeholder="Last Name">
+								<input class="shopping-cart" type="text" value="" placeholder="Email Address">
+								<input class="shopping-cart" type="text" value="" placeholder="Phone Number">
 								<div class="form-spacer"
 									<label class="terms">Terms and Conditions</label>
 								</div>
@@ -192,7 +191,7 @@
 		<!--VIDEO-->
 		
 		<!--FOOTER-->
-		<div>
+		<div id="footer">
 			<footer>www.pandemicpriorities.com/packagedeal &nbsp;|&nbsp; &copy; 2021</footer>
 		</div>
 		<!--END FOOTER-->
